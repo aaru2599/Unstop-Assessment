@@ -10,19 +10,18 @@ const App = () => {
     <Suspense
       fallback={
         <div
-          className="d-flex justify-content-center align-items-center gap-4  fs-3 fw-bold"
+          className="d-flex flex-column justify-content-center align-items-center  "
           style={{ height: "100vh", color: "#0d6efd" }}
         >
-         <div> Loading</div>
-          <Circles
-            height="50"
-            width="50"
-            color="#0d6efd"
-            ariaLabel="circles-loading"
-            wrapperStyle={{}}
-            wrapperClass=""
-            visible={true}
-          />
+          <div>
+            <img
+              width={120}
+              height={60}
+              src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg"
+              alt="logo"
+            />{" "}
+          </div>
+          <div className="fs-6 ">Please Wait</div>
         </div>
       }
     >
