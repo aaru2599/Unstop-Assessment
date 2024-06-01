@@ -17,7 +17,7 @@ const AssessmentHead = () => {
           <div className="d-flex ms-md-0 ms-3 align-items-center">
             {/* to open off canvas */}
             <button
-              className="border-0 bg-body-secondary p-2  rounded-5 d-md-none"
+              className="border-0 bg-body-secondary p-2  rounded-5 d-md-none "
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasExample"
               aria-controls="offcanvasExample"

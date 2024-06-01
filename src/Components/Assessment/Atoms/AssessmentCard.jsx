@@ -15,7 +15,7 @@ const AssessmentCard = ({ cardData }) => {
     border: "1px solid #DADCE0",
     borderRadius: "12px",
     height: `${isMobAndTab?"128px":"210px"}`,
-    minWidth: "330px",
+    minWidth: "310px",
     width: "auto",
   };
   return (

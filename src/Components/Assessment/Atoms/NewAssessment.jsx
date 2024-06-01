@@ -21,7 +21,7 @@ const NewAssessment = () => {
     border: "1px dashed #DADCE0",
     backgroundColor: "#F6F8FA",
     // width: "100%",
-     minWidth: "330px",
+     minWidth: "310px",
     borderRadius:"12px",
   };
   return (
