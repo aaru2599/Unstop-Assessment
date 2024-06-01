@@ -9,21 +9,21 @@ const skillData = [
   { id: 5, skill: "No of Questions" },
 ];
 const NewAssessmentForm = () => {
-   // State to manage the list of skills
+  // State to manage the list of skills
   const [skills, setSkills] = useState(skillData);
 
   const [skillValue, setSkillValue] = useState("");
 
-   // Function to remove a skill by its index
+  // Function to remove a skill by its index
   const handleRemoveSkill = (index) => {
     setSkills(skills.filter((_, i) => i !== index));
   };
-   // Function to add a new skill when Enter key is pressed
+  // Function to add a new skill when Enter key is pressed
   const handleAddSkill = (e) => {
     if (e.key === "Enter" && skillValue.trim() !== "") {
       const newSkill = { id: skills.length + 1, skill: skillValue.trim() };
       setSkills([...skills, newSkill]);
-      
+
       setSkillValue("");
     }
   };
@@ -50,7 +50,7 @@ const NewAssessmentForm = () => {
       <DivContainer>
         <label htmlFor="description">Description</label>
         <select name="" id="">
-        <option value="">Select</option>
+          <option value="">Select</option>
           <option value="job">Job</option>
           <option value="internship">Internship</option>
         </select>
